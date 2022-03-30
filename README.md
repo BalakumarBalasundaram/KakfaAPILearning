@@ -22,4 +22,3 @@ KafkaProducer:
 ProducerRecord & RecordMetadata:
         ProducerRecord<String, String> record = new ProducerRecord<>(Commons.EXAMPLE_KAFKA_TOPIC, uuid, word);
         RecordMetadata metadata = producer.send(record).get();
-´´´
