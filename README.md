@@ -22,3 +22,12 @@ KafkaProducer:
 ProducerRecord & RecordMetadata:
         ProducerRecord<String, String> record = new ProducerRecord<>(Commons.EXAMPLE_KAFKA_TOPIC, uuid, word);
         RecordMetadata metadata = producer.send(record).get();
+
+Learn Technologies
+Kafka client api
+Kafka Stream api
+Materalized views and Kafka State stores
+Schema Registry
+Rest API using Jetty Server
+Avro Serializer & DeSerializer
+
