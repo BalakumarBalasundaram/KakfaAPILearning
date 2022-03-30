@@ -3,12 +3,14 @@
 Quick Kafka API to refer
 
 Package:
-org.apache.kafka.clients.producer
-Class:
-KafkaProducer
-ProducerRecord
-RecordMetadata
+ - org.apache.kafka.clients.producer
 
+Class:
+ - KafkaProducer
+ - ProducerRecord
+ - RecordMetadata
+
+```
 KafkaProducer:
         Properties props = new Properties();
         props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, Commons.EXAMPLE_KAFKA_SERVER);
@@ -20,3 +22,4 @@ KafkaProducer:
 ProducerRecord & RecordMetadata:
         ProducerRecord<String, String> record = new ProducerRecord<>(Commons.EXAMPLE_KAFKA_TOPIC, uuid, word);
         RecordMetadata metadata = producer.send(record).get();
+´´´
